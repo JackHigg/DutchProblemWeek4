@@ -9,6 +9,7 @@ public class Menu {
         private boolean repeat= true;
 
         Vector<GenerateBalls> balls = new Vector<GenerateBalls>();
+        private int x=0;
 
 
         public Menu(){
@@ -30,7 +31,7 @@ public class Menu {
             System.out.println("\nMenu");
             System.out.println("\n1: Generate random sequence of balls red,white,blue");
             System.out.println("\n2: re oder sequence to match the dutch flag");
-            System.out.println("\n3: Quit\n");
+            System.out.println("\n6: Quit\n");
             choice=kboard.nextInt();
 
 
@@ -47,6 +48,8 @@ public class Menu {
                     G1.displayBalls();
                     balls.add(G1);
 
+                    x=x+1;
+
                     break;
 
 
@@ -54,9 +57,15 @@ public class Menu {
 
                     GenerateBalls show;
 
-                    show=balls.get(0);
+                    show=balls.get(x-1);
+                    show.displayBalls();
                     show.reorderBalls();
                     show.displayBalls();
+
+
+
+
+
 
                     break;
 
