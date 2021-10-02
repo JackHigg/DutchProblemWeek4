@@ -136,7 +136,6 @@ public class GenerateBalls {
 
 
     public void displayBalls(){
-        System.out.println("---------------------------------------------");
         System.out.println("\n"+this.topBall);
         System.out.println(this.middleBall);
         System.out.println(this.bottomBall+"\n");
