@@ -30,7 +30,7 @@ public class Menu {
             System.out.println("\nMenu");
             System.out.println("\n1: Generate random sequence of balls red,white,blue");
             System.out.println("\n2: re oder sequence to match the dutch flag");
-            System.out.println("\n6: Quit\n");
+            System.out.println("\n3: Quit\n");
             choice=kboard.nextInt();
 
 
